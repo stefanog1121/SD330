@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E04: Fridge Display</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="fridge.css">
+</head>
+
+<body onload="showTime()">
+    <div id="fridgeContainer" class="widget">
+        <img src="https://www.lg.com/us/images/refrigerators/md08000860/gallery/M-02.jpg" alt="Fridge">
+        <div id="screen" onclick="openScreen()">
+            <div id="offClock" class="clock"></div>
+            <hr>
+            <div id=clickHere>
+                <h2>Touch to Wake</h2>
+            </div>
+        </div>
+        <div id="fridgeView">
+            <img id="insideFridge" 
+                src="https://i0.wp.com/vibrantandpure.com/wp-content/uploads/2017/06/fullsizerender-287.jpg?fit=750%2C928&quality=80&strip=all&ssl=1" 
+                alt="Inside Fridge">
+        </div>
+    </div>
+
+    <div id="screenContent" class="widget">
+        <div id="topBar">
+            <div id="buttons">
+                    <button type="button" onclick="goBack()">&#8592; Close</button>
+                    <button type="button" onclick="showFridge()"> Toggle Screen</button>
+            </div>
+            <div id="onClock" class="clock"></div>
+            <div id="LGLogo">
+                <img 
+                    src="https://cdn.freebiesupply.com/images/large/2x/lg-logo-black-and-white.png"
+                    alt="LG Logo">
+            </div>
+        </div>
+        <hr>
+
+        <div id=widgets>
+            <div id="temperature" class="widget">
+                <img
+                    src="https://mir-s3-cdn-cf.behance.net/projects/404/f9ee0d130816795.Y3JvcCwxNTIzLDExOTIsMTMyLDA.png"
+                    alt="Fridge Temperature Control">
+            </div>
+            <div id="TV" class="widget">
+                <iframe 
+                    src="https://www.youtube.com/embed/1qpqJoh3WPs?si=8hfgFmKLaqpBQDFz" 
+                    title="YouTube TV Stream"></iframe>
+            </div>
+            <div id="browser" class="widget">
+                <img
+                    src="https://www.google.com/chrome/static/images/dark-mode/chrome-classic.png"
+                    alt="Fridge Temperature Control">
+            </div>
+            <div id="groceryList" class="widget">
+                <h2>Shopping List:</h2>
+                <input type="text" id="input" placeholder="...">
+                <button type="button" onclick="addItem()">Add</button>
+                <ul id="list">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="fridge.js"></script>
+</body>
+</html>
