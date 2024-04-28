@@ -1,0 +1,1786 @@
+{
+    "lots": {
+        "McCann": {
+            "name": "McCann",
+            "jpg": "https://mcgowanmasonry.com/wp-content/uploads/2021/02/marist-mcann.jpg",
+            "map": "img/mccan.png",
+            "comments": "Closed 5/10 for upcoming Men's Basketball game.",
+            "permit": "Resident, Faculty",
+            "total": 120,
+            "spaces": {
+                "1": {
+                    "num": 1,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "2": {
+                    "num": 2,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "3": {
+                    "num": 3,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "4": {
+                    "num": 4,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "5": {
+                    "num": 5,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "6": {
+                    "num": 6,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "7": {
+                    "num": 7,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "8": {
+                    "num": 8,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "9": {
+                    "num": 9,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "10": {
+                    "num": 10,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "11": {
+                    "num": 11,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "12": {
+                    "num": 12,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "13": {
+                    "num": 13,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "14": {
+                    "num": 14,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "15": {
+                    "num": 15,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "16": {
+                    "num": 16,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "17": {
+                    "num": 17,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "18": {
+                    "num": 18,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "19": {
+                    "num": 19,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "20": {
+                    "num": 20,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "21": {
+                    "num": 21,
+                    "permit": "A",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                }
+            }
+        },
+        "Foy": {
+            "name": "Foy",
+            "jpg": "https://www.marist.edu/documents/86200/455332/Foy+Outside+New.jpg/dd4114df-bdf3-9f41-2a73-da73449ad903?t=1677174178963",
+            "map": "img/foy.png",
+            "permit": "Faculty",
+            "total": 40,
+            "spaces": {
+                "1": {
+                    "num": 1,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "2": {
+                    "num": 2,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "3": {
+                    "num": 3,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "4": {
+                    "num": 4,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "5": {
+                    "num": 5,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "6": {
+                    "num": 6,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "7": {
+                    "num": 7,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "8": {
+                    "num": 8,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "9": {
+                    "num": 9,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "10": {
+                    "num": 10,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "11": {
+                    "num": 11,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "12": {
+                    "num": 12,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "13": {
+                    "num": 13,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "14": {
+                    "num": 14,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "15": {
+                    "num": 15,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "16": {
+                    "num": 16,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "17": {
+                    "num": 17,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "18": {
+                    "num": 18,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "19": {
+                    "num": 19,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "20": {
+                    "num": 20,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "21": {
+                    "num": 21,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                }
+            }
+        },
+        "Dyson": {
+            "name": "Dyson",
+            "jpg": "https://www.marist.edu/documents/86200/132428/Dyson+Header.jpg/f89b76b4-7080-6112-09b7-23cf4a090143?t=1673041932700",
+            "permit": "Faculty",
+            "total": 50,
+            "isClosed": true
+        },
+        "Donnelly": {
+            "name": "Donnelly",
+            "jpg": "https://static1.squarespace.com/static/594f72de20099e6f69c443e7/5a7652a3f9619a31bd23a200/5c8ecc54eef1a136bc0dec2f/1591469336518/2640_marist-college_12.jpg?format=1500w",
+            "map": "img/donnelly.png",
+            "permit": "Faculty",
+            "total": 70,
+            "spaces": {
+                "1": {
+                    "num": 1,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "2": {
+                    "num": 2,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "3": {
+                    "num": 3,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "4": {
+                    "num": 4,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "5": {
+                    "num": 5,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "6": {
+                    "num": 6,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "7": {
+                    "num": 7,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "8": {
+                    "num": 8,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "9": {
+                    "num": 9,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "10": {
+                    "num": 10,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "11": {
+                    "num": 11,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "12": {
+                    "num": 12,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "13": {
+                    "num": 13,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "14": {
+                    "num": 14,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "15": {
+                    "num": 15,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "16": {
+                    "num": 16,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "17": {
+                    "num": 17,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "18": {
+                    "num": 18,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "19": {
+                    "num": 19,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "20": {
+                    "num": 20,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "21": {
+                    "num": 21,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                }
+            }
+        },
+        "Fontaine": {
+            "name": "Fontaine",
+            "jpg": "https://tours.pocketsights.com/media/1287/854e105a45e64e21acd6858f7864d36c_medium.jpg",
+            "map": "img/fontaine.png",
+            "permit": "Faculty",
+            "total": 30,
+            "spaces": {
+                "1": {
+                    "num": 1,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "2": {
+                    "num": 2,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "3": {
+                    "num": 3,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "4": {
+                    "num": 4,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "5": {
+                    "num": 5,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "6": {
+                    "num": 6,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "7": {
+                    "num": 7,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "8": {
+                    "num": 8,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "9": {
+                    "num": 9,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "10": {
+                    "num": 10,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "11": {
+                    "num": 11,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "12": {
+                    "num": 12,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "13": {
+                    "num": 13,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "14": {
+                    "num": 14,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "15": {
+                    "num": 15,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "16": {
+                    "num": 16,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "17": {
+                    "num": 17,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "18": {
+                    "num": 18,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "19": {
+                    "num": 19,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "20": {
+                    "num": 20,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "21": {
+                    "num": 21,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                }
+            }
+        },
+        "Hoop": {
+            "name": "Hoop",
+            "jpg": "https://goredfoxes.com/images/2020/9/15/NEW_GARTLAND_1.JPG?width=1000&height=563&mode=crop",
+            "map": "img/hoop.png",
+            "permit": "Resident",
+            "total": 100,
+            "spaces": {
+                "1": {
+                    "num": 1,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "2": {
+                    "num": 2,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "3": {
+                    "num": 3,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "4": {
+                    "num": 4,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "5": {
+                    "num": 5,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "6": {
+                    "num": 6,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "7": {
+                    "num": 7,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "8": {
+                    "num": 8,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "9": {
+                    "num": 9,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "10": {
+                    "num": 10,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "11": {
+                    "num": 11,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "12": {
+                    "num": 12,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "13": {
+                    "num": 13,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "14": {
+                    "num": 14,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "15": {
+                    "num": 15,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "16": {
+                    "num": 16,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "17": {
+                    "num": 17,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "18": {
+                    "num": 18,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "19": {
+                    "num": 19,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "20": {
+                    "num": 20,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "21": {
+                    "num": 21,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                }
+            }
+        },
+        "NorthEnd": {
+            "name": "North End",
+            "jpg": "https://www.ramsa.com/sites/default/files/A13039%202018A88_468.jpg",
+            "map": "img/northend.png",
+            "permit": "Resident",
+            "total": 80,
+            "spaces": {
+                "1": {
+                    "num": 1,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "2": {
+                    "num": 2,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "3": {
+                    "num": 3,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "4": {
+                    "num": 4,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "5": {
+                    "num": 5,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "6": {
+                    "num": 6,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "7": {
+                    "num": 7,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "8": {
+                    "num": 8,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "9": {
+                    "num": 9,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "10": {
+                    "num": 10,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "11": {
+                    "num": 11,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "12": {
+                    "num": 12,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "13": {
+                    "num": 13,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "14": {
+                    "num": 14,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "15": {
+                    "num": 15,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "16": {
+                    "num": 16,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "17": {
+                    "num": 17,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "18": {
+                    "num": 18,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "19": {
+                    "num": 19,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "20": {
+                    "num": 20,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "21": {
+                    "num": 21,
+                    "permit": "R",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                }
+            }
+        },
+        "Midrise": {
+            "name": "Midrise",
+            "jpg": "https://www.marist.edu/documents/86200/493410/MR+Outside+New.jpg/f5ed1af7-3ab0-78c2-ff30-fdbf2520633d?t=1678200697380",
+            "map": "img/midrise.png",
+            "comments": "Vistor Lot. Residents allowed between 5pm-5am.",
+            "permit": "Faculty",
+            "total": 40,
+            "spaces": {
+                "1": {
+                    "num": 1,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "2": {
+                    "num": 2,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "3": {
+                    "num": 3,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "4": {
+                    "num": 4,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "5": {
+                    "num": 5,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "6": {
+                    "num": 6,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "7": {
+                    "num": 7,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "8": {
+                    "num": 8,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "9": {
+                    "num": 9,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "10": {
+                    "num": 10,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "11": {
+                    "num": 11,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "12": {
+                    "num": 12,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "13": {
+                    "num": 13,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "14": {
+                    "num": 14,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "15": {
+                    "num": 15,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "16": {
+                    "num": 16,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "17": {
+                    "num": 17,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "18": {
+                    "num": 18,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "19": {
+                    "num": 19,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "20": {
+                    "num": 20,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "21": {
+                    "num": 21,
+                    "permit": "F",
+                    "availability": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                }
+            },
+            "weekendSwitch": true
+        },
+        "Riverview": {
+            "name": "Riverview",
+            "jpg": "https://goredfoxes.com/images/2014/8/12//YSLDICHKBCVCWUP.20140812181456.jpg",
+            "map": "img/riverview.png",
+            "permit": "Resident, Faculty",
+            "total": 50,
+            "spaces": {
+                "1": {
+                    "num": 1,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "2": {
+                    "num": 2,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "3": {
+                    "num": 3,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "4": {
+                    "num": 4,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "5": {
+                    "num": 1,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "6": {
+                    "num": 6,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "7": {
+                    "num": 7,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "8": {
+                    "num": 8,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "9": {
+                    "num": 9,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "10": {
+                    "num": 10,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "11": {
+                    "num": 11,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "12": {
+                    "num": 12,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "13": {
+                    "num": 13,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "14": {
+                    "num": 14,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "15": {
+                    "num": 15,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "16": {
+                    "num": 16,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "17": {
+                    "num": 17,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "18": {
+                    "num": 18,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "19": {
+                    "num": 19,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "20": {
+                    "num": 20,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "21": {
+                    "num": 21,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                }
+            }
+        },
+        "LowerWest": {
+            "name": "Lower West",
+            "jpg": "https://www.marist.edu/documents/86200/474596/WC+Outside+New.jpg/f95276e5-a2a0-b433-41b6-faee0816be3e?t=1677703854914",
+            "map": "img/lowerwest.png",
+            "permit": "Resident, Faculty",
+            "total": 60,
+            "spaces": {
+                "1": {
+                    "num": 1,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "2": {
+                    "num": 2,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "3": {
+                    "num": 3,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "4": {
+                    "num": 4,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "5": {
+                    "num": 1,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "6": {
+                    "num": 6,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "7": {
+                    "num": 7,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "8": {
+                    "num": 8,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "9": {
+                    "num": 9,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "10": {
+                    "num": 10,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "11": {
+                    "num": 11,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "12": {
+                    "num": 12,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "13": {
+                    "num": 13,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "14": {
+                    "num": 14,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "15": {
+                    "num": 15,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "16": {
+                    "num": 16,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "17": {
+                    "num": 17,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "18": {
+                    "num": 18,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "19": {
+                    "num": 19,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "20": {
+                    "num": 20,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "21": {
+                    "num": 21,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                }
+            }
+        },
+        "UpperWest": {
+            "name": "Upper West",
+            "jpg": "https://www.marist.edu/documents/86200/512651/WU+Outside+New.jpg/dcb712b1-d163-09c8-19ac-ff5d65b2b913?t=1678302637940",
+            "map": "img/upperwest.png",
+            "permit": "Resident, Faculty",
+            "total": "100",
+            "spaces": {
+                "1": {
+                    "num": 1,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "2": {
+                    "num": 2,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "3": {
+                    "num": 3,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "4": {
+                    "num": 4,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": true
+                },
+                "5": {
+                    "num": 1,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "6": {
+                    "num": 6,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "7": {
+                    "num": 7,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "8": {
+                    "num": 8,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "9": {
+                    "num": 9,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "10": {
+                    "num": 10,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "11": {
+                    "num": 11,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "12": {
+                    "num": 12,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "13": {
+                    "num": 13,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "14": {
+                    "num": 14,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "15": {
+                    "num": 15,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "16": {
+                    "num": 16,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "17": {
+                    "num": 17,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "18": {
+                    "num": 18,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "19": {
+                    "num": 19,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "20": {
+                    "num": 20,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                },
+                "21": {
+                    "num": 21,
+                    "permit": "A",
+                    "availibilty": "FREE",
+                    "filledTime": "",
+                    "reservedTime": "",
+                    "charger": false
+                }
+            }
+        }
+
+    }
+
+}
