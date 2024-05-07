@@ -353,7 +353,8 @@
                     "reservedTime": "",
                     "charger": false
                 }
-            }
+            },
+            "weekendSwitch": true
         },
         "Dyson": {
             "name": "Dyson",
@@ -537,7 +538,8 @@
                     "reservedTime": "",
                     "charger": false
                 }
-            }
+            },
+            "weekendSwitch": true
         },
         "Fontaine": {
             "name": "Fontaine",
