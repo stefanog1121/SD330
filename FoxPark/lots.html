@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+    <link rel="stylesheet" href="styles.css">
+    <title>FoxPark Error Page</title>
+</head>
+<body onload="init()">
+    <div id="topBar">
+       <a href="javascript:getURL('parking');"><img id="logo" src="img/logo.png"></a>
+
+       <div id="account">
+            <!-- Dropdown with text input for CWID/Permit -->
+            <div class="dropdown">
+                <label for="cwid">CWID:</label>
+                <input type="text" id="cwid" name="cwid" placeholder="Enter CWID">
+                <button id="cwidBut" onclick=setCWID()></button>
+                <br>
+
+                <label for="permit">Permit:</label>
+                <input type="text" id="permit" name="permit" placeholder="Enter Permit">
+                <button id="permitBut" onclick=setPermit()></button>
+            </div>
+       </div>
+    </div>
+
+    <nav>
+        <ol>
+          <li class="crumb"><a href="#">Home</a></li>
+          <li class="crumb">Parking Lots</li>
+        </ol>
+      </nav>
+
+    <div id="header">
+        <h2>Available Lots</h2>
+        <hr>
+    </div>
+
+    <div id="lotsList">
+    </div>
+
+</body>
+
+<script>
+    const parkingURL = 'parking.html?';
+    const lotsURL = 'lots.html?';
+    const errorURL = 'error.html?';
+    const mcCannURL = 'booking.html?l=mc'
+    const foyURL = 'booking.html?l=fy'
+    const dysonURL = 'booking.html?l=dy'
+    const donnellyURL = 'booking.html?l=dn'
+    const fontaineURL = 'booking.html?l=fn'
+    const hoopURL = 'booking.html?l=hp'
+    const northEndURL = 'booking.html?l=ne'
+    const midriseURL = 'booking.html?l=mr'
+    const riverviewURL = 'booking.html?l=rv'
+    const upperURL = 'booking.html?l=uw'
+    const lowerURL = 'booking.html?l=lw'
+ 
+    let cwid = '';
+    let permit = '';
+
+
+    function getURL(type) {
+        const cwidElement = document.getElementById("cwid");
+        const permitElement = document.getElementById("permit");
+        
+        const cwidValue = cwidElement ? cwidElement.value : '';
+        const permitValue = permitElement ? permitElement.value : '';
+
+        const urlMap = {
+        'parking': parkingURL,
+        'lots': lotsURL,
+        'error': errorURL,
+        'McCann': mcCannURL,
+        'Foy': foyURL,
+        'Dyson': dysonURL,
+        'Donnelly': donnellyURL,
+        'Fontaine': fontaineURL,
+        'Hoop': hoopURL,
+        'NorthEnd': northEndURL,
+        'Midrise': midriseURL,
+        'Riverview': riverviewURL,
+        'UpperWest': upperURL,
+        'LowerWest': lowerURL
+        };
+
+        // General page VS Booking page link formatting
+        let baseUrl = urlMap[type];
+        if (baseUrl.includes('?l=')) {
+            window.location.href = `${baseUrl}&c=${cwidValue}&p=${permitValue}`;
+        } else { // if link does NOT include a lot parameter
+            const separator = baseUrl.includes('?') ? '&' : '?';
+            window.location.href = `${baseUrl}${separator}c=${cwidValue}&p=${permitValue}`;
+        }
+    }
+
+    // On page load, check both params from the URL
+    async function init() {
+        const topBar = document.getElementById('topBar');
+        topBar.style.backgroundColor = '#e62649';
+        document.documentElement.style.backgroundImage = 'none';
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const cwidParam = urlParams.get('c');
+        const permitParam = urlParams.get('p');
+
+        if (cwidParam) {
+            document.getElementById('cwid').value = cwidParam;
+            setCWID();
+        }
+
+        if (permitParam) {
+            document.getElementById('permit').value = permitParam;
+            setPermit(); 
+        }
+        await displayLots()
+    }
+
+    function setCWID() {
+        const cwidField = document.getElementById('cwid');
+        cwid = cwidField.value; 
+        const cwidLabel = document.querySelector("label[for='cwid']");
+        cwidLabel.textContent = `CWID: ${cwid}`;
+        cwidField.style.display = 'none';
+    }
+
+    function setPermit() {
+        const permitField = document.getElementById('permit');
+        permit = permitField.value.toLowerCase();
+        const validPermits = ['resident', 'faculty'];
+
+        if (validPermits.includes(permit)) {
+            document.cookie = `userPermit=${permit}; path=/`;
+            const permitLabel = document.querySelector("label[for='permit']");
+            permitLabel.textContent = `Permit: ${permit.toUpperCase()}`;
+            permitField.style.display = 'none';
+        } else {
+            alert("Invalid permit type. Please enter either 'resident' or 'faculty'.");
+            permitField.value = ''; // Clear the invalid entry
+            permit = '';
+        }
+    }
+
+    // CWID Listener
+    var cwidIN = document.getElementById("cwid");
+    cwidIN.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("cwidBut").click();
+            document.getElementById("permitBut").click();
+        }
+    });
+
+    // Permit Listener
+    var permitIN = document.getElementById("permit");
+    permitIN.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("permitBut").click();
+            document.getElementById("cwidBut").click();
+        }
+    });
+
+    // Fetching + Displaying Lots
+    async function displayLots(){ 
+        const response = await fetch('https://stefanog1121.github.io/SD330//parking.json');
+        const data = await response.json();
+
+        let keys = Object.keys(data['lots']);
+        for (let i = 0; i < keys.length; i++) {
+            let thisKey = keys[i];
+
+            let link = document.createElement('a');
+            let n = data['lots'][thisKey]['name']
+            link.href = `#`;
+            link.onclick = checkLot(data['lots'][thisKey]['name']);
+
+            let card = document.createElement('div');
+            card.className = 'card';
+            card.id = data['lots'][thisKey]['name']
+            card.appendChild(link);
+
+            let img = document.createElement('img');
+            img.className = 'cardImg';
+            img.src = data['lots'][thisKey]['jpg'];
+            card.appendChild(img);
+
+            let title = document.createElement('h2');
+            title.textContent = data['lots'][thisKey]['name']
+            title.className = 'cardTitle';
+            card.appendChild(title);
+
+            let cardInfo = document.createElement('div');
+            cardInfo.className = 'cardInfo';
+            card.appendChild(cardInfo);
+
+            let permit = document.createElement('div');
+            permit.className = 'permit';
+            permit.textContent = data['lots'][thisKey]['permit']
+            cardInfo.appendChild(permit);
+
+            let space = document.createElement('div');
+            space.className = 'space';
+            space.textContent = 'Spots: '
+            space.textContent += data['lots'][thisKey]['total']
+            cardInfo.appendChild(space);
+
+            let parent = document.getElementById('lotsList');
+            parent.appendChild(card)
+        }
+    }
+
+    function checkLot(name) {
+        const response = fetch('https://stefanog1121.github.io/SD330//parking.json');
+        const data = response.json();
+
+        if (name == 'Dyson') {
+            // Alert about lot closure
+            // Also, add notice of closure to card
+        }
+        else if(/*Permit not set*/) {
+            // Alert Permit
+        }
+        else if (/*Permit not match*/) {
+            // Alert Mismatch
+        }
+        else {
+            getURL(name)
+        }
+
+    }
+
+    
+
+</script>
+</html>

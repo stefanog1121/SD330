@@ -1,0 +1,291 @@
+html {
+    background-image: url('img/background.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    font-family:'Montserrat';
+    height: 100%
+}
+
+#topBar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin-top: 110px;
+    margin-left: 20px;
+}
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.crumb {
+    display: inline-block;
+    font-size: 125%;
+    padding: 0px;
+}
+
+.crumb a::after {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 100%;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+}
+
+#logo {
+    width: 55px;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#fox {
+    width: 100px;
+    height: auto;
+}
+
+#infoPage {
+    background-color: #f7f7f7; 
+    padding: 50px 0; 
+    height: auto; 
+}
+
+#centerInfo {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: larger;
+}
+
+#lotsLink {
+    text-decoration:none;
+    color: white;
+    width: 80%;
+}
+
+#lotsLink:hover {
+    color:#e31837;
+}
+
+#getStarted {
+    height: auto;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 1rem;
+    align-self: center;
+}
+#getStarted:hover {
+    background-color: white;
+    opacity: 75%;
+    color: #e31837;
+    cursor: pointer;
+}
+
+#infoPage {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    padding: 100px;
+    color: #f15e77;
+    text-align: center;
+    font-size: 50px;
+}
+hr {
+    border: 2px solid #f15e77;
+}
+
+#security {
+    display: flex;
+    background-color: #f15e77;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 200px 100px 100px;
+}
+
+#tickets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0 100px 0;
+    margin: 0 100px 0 200px;
+}
+
+#faq {
+    display: flex;
+    background-color: #f15e77;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 200px 100px 100px;
+    
+}
+
+.infoImg {
+    max-width: 450px;
+    height: auto;
+    object-fit: scale-down;
+}
+
+#account {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-image: url("img/avatar.png");
+    background-color: #f4b9c3;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 15px
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: -150px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1;
+    min-width: 150px;
+}
+
+#account:hover .dropdown {
+    display: block;
+}
+
+.dropdown input {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#cwidBut {
+    display: none;
+}
+
+#permitBut {
+    display: none;
+}
+
+#errorSplash {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#errorImg {
+    background-image: url("https://thumbs.dreamstime.com/b/where-hell-i-lost-driver-middle-nowhere-trying-to-make-some-connection-somebody-somewhere-cell-phone-lap-top-115765867.jpg");
+    width: 500px;
+    height: 400px;
+}
+
+#errorText {
+    margin: 50px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header hr {
+    width: 60%;
+    height: 2px;
+    background-color: #e62649;
+    border: none;
+}
+
+#lotsList {
+    width: 90%;
+    height:auto;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 375px;
+    border: 2px solid #e62649;
+    border-radius: 1rem;
+    flex: 0 0 30%;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    background-color: #e62649;
+    color:white
+}
+
+.cardImg {
+    width: 300px;
+    height: auto;
+}
+
+.cardInfo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.permit {
+    padding: 15px 0 0 15px;
+}
+
+.space {
+    padding: 15px 15px 0 0;
+}
+
+.cardTitle {
+
+}
+

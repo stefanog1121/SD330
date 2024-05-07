@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+    <link rel="stylesheet" href="styles.css">
+    <title>FoxPark Error Page</title>
+</head>
+<body onload="init()">
+    <div id=topBar>
+       <a href="javascript:getURL('parking');"><img id="logo" src="img/logo.png"></a>
+
+       <div id="account">
+            <!-- Dropdown with text input for CWID/Permit -->
+            <div class="dropdown">
+                <label for="cwid">CWID:</label>
+                <input type="text" id="cwid" name="cwid" placeholder="Enter CWID">
+                <button id="cwidBut" onclick=setCWID()></button>
+                <br>
+
+                <label for="permit">Permit:</label>
+                <input type="text" id="permit" name="permit" placeholder="Enter Permit">
+                <button id="permitBut" onclick=setPermit()></button>
+            </div>
+       </div>
+    </div>
+
+    <div id="errorSplash">
+        <div id="errorImg"></div>
+        <div id="errorText">
+            <h1>Recalculating...</h1>
+            <p>Uh oh! You weren't supposed to end up here...</p>
+            <h3><a href="javascript:history.back()">Return to Route</a></h3>
+        </div>
+    </div>
+</body>
+
+<script>
+    const parkingURL = 'parking.html';
+    const lotsURL = 'lots.html';
+    const bookingURL = 'booking.html';
+    const errorURL = 'error.html';
+    let cwid = '';
+    let permit = '';
+
+
+    function getURL(type) {
+        const cwidElement = document.getElementById("cwid");
+        const permitElement = document.getElementById("permit");
+        
+        const cwidValue = cwidElement ? cwidElement.value : '';
+        const permitValue = permitElement ? permitElement.value : '';
+
+        const urlMap = {
+            'parking': parkingURL,
+            'lots': lotsURL,
+            'booking': bookingURL,
+            'error': errorURL
+        };
+
+        const url = `${urlMap[type]}?c=${cwidValue}&p=${permitValue}`;
+        window.location.href = url;
+    }
+
+    // On page load, check both params from the URL
+    function init() {
+        const topBar = document.getElementById('topBar');
+        topBar.style.backgroundColor = '#e62649';
+        document.documentElement.style.backgroundImage = 'none';
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const cwidParam = urlParams.get('c');
+        const permitParam = urlParams.get('p');
+
+        if (cwidParam) {
+            document.getElementById('cwid').value = cwidParam;
+            setCWID();
+        }
+
+        if (permitParam) {
+            document.getElementById('permit').value = permitParam;
+            setPermit(); 
+        }
+    }
+
+    function setCWID() {
+        const cwidField = document.getElementById('cwid');
+        cwid = cwidField.value; 
+        const cwidLabel = document.querySelector("label[for='cwid']");
+        cwidLabel.textContent = `CWID: ${cwid}`;
+        cwidField.style.display = 'none';
+    }
+
+    function setPermit() {
+        const permitField = document.getElementById('permit');
+        permit = permitField.value.toLowerCase();
+        const validPermits = ['resident', 'faculty'];
+
+        if (validPermits.includes(permit)) {
+            document.cookie = `userPermit=${permit}; path=/`;
+            const permitLabel = document.querySelector("label[for='permit']");
+            permitLabel.textContent = `Permit: ${permit.toUpperCase()}`;
+            permitField.style.display = 'none';
+        } else {
+            alert("Invalid permit type. Please enter either 'resident' or 'faculty'.");
+            permitField.value = ''; // Clear the invalid entry
+            permit = '';
+        }
+    }
+
+    // CWID Listener
+    var cwidIN = document.getElementById("cwid");
+    cwidIN.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("cwidBut").click();
+            document.getElementById("permitBut").click();
+        }
+    });
+
+    // Permit Listener
+    var permitIN = document.getElementById("permit");
+    permitIN.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("permitBut").click();
+            document.getElementById("cwidBut").click();
+        }
+    });
+
+</script>
+</html>
