@@ -1428,7 +1428,7 @@
                 }
             }
         },
-        "LowerWest": {
+        "Lower West": {
             "name": "Lower West",
             "jpg": "https://www.marist.edu/documents/86200/474596/WC+Outside+New.jpg/f95276e5-a2a0-b433-41b6-faee0816be3e?t=1677703854914",
             "map": "img/lowerwest.png",
@@ -1605,7 +1605,7 @@
                 }
             }
         },
-        "UpperWest": {
+        "Upper West": {
             "name": "Upper West",
             "jpg": "https://www.marist.edu/documents/86200/512651/WU+Outside+New.jpg/dcb712b1-d163-09c8-19ac-ff5d65b2b913?t=1678302637940",
             "map": "img/upperwest.png",

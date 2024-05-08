@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+    <link rel="stylesheet" href="styles.css">
+    <title>FoxPark Error Page</title>
+</head>
+<body onload="init()">
+    <div id="topBar">
+       <a href="javascript:getURL('parking');"><img id="logo" src="img/logo.png"></a>
+
+       <div id="account">
+            <!-- Dropdown with text input for CWID/Permit -->
+            <div class="dropdown">
+                <label for="cwid">CWID:</label>
+                <input type="text" id="cwid" name="cwid" placeholder="Enter CWID">
+                <button id="cwidBut" onclick=setCWID()></button>
+                <br>
+
+                <label for="permit">Permit:</label>
+                <input type="text" id="permit" name="permit" placeholder="Enter Permit">
+                <button id="permitBut" onclick=setPermit()></button>
+            </div>
+       </div>
+    </div>
+
+    <nav>
+        <ol>
+          <li class="crumb"><a href="javascript:getURL('parking');">Home</a></li>
+          <li class="crumb"><a href="javascript:history.back()">Parking Lots</a></li>
+          <li class="crumb">Confirm Spot Reservation</li>
+        </ol>
+    </nav>
+    <div id="window">
+        <div id="booking">
+            <div id=spaceHeader>
+                Select Lot Space
+                <hr>
+            </div>
+
+            <select id="spaceInput">
+                <option value="" disabled selected>Choose Space</option>
+            </select>
+
+            <div id="spaceInfo">
+                <div id="num"><small>Spot - </small><span id="spotNum"></span></div>
+                <div id="spacePermit"><small>Permit - </small><span id="spotPermit"></span></div>
+                <div id="avail"><small>Availability - </small><span id="spotAvail"></span></div>
+                <div id="charger"><small>EV Charger - </small><span id="spotCharger"></span></div>
+                <div id="timeRes">
+                    <small>Reserved</small> <input id="in" type="time" min="06:00" max="20:00" required />
+                    <small>Until</small> <input id="out" type="time" min="07:00" max="20:00" required />
+                </div>
+                <div id="confirm">
+                    <button id="confirmButton" disabled>Confirm Reservation</button>
+                </div>
+            </div>
+        
+        </div>
+
+        <div id=lotDec>
+            <div id="lotMapImg">
+            </div>
+        
+            <div id="lotName">
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+
+<script>
+    const parkingURL = 'parking.html';
+    const lotsURL = 'lots.html';
+    const bookingURL = 'booking.html';
+    const errorURL = 'error.html';
+
+    let cwid = '';
+    let permit = '';
+    let lot = 'Foy';
+
+    function getURL(type) {
+        const cwidElement = document.getElementById("cwid");
+        const permitElement = document.getElementById("permit");
+        
+        const cwidValue = cwidElement ? cwidElement.value : '';
+        const permitValue = permitElement ? permitElement.value : '';
+
+        const urlMap = {
+            'parking': parkingURL,
+            'lots': lotsURL,
+            'booking': bookingURL,
+            'error': errorURL
+        };
+
+        const url = `${urlMap[type]}?c=${cwidValue}&p=${permitValue}`;
+        window.location.href = url;
+    }
+
+    // On page load, check account + lot params from the URL
+    function init() {
+        const topBar = document.getElementById('topBar');
+        topBar.style.backgroundColor = '#e62649';
+        document.documentElement.style.backgroundImage = 'none';
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const cwidParam = urlParams.get('c');
+        const permitParam = urlParams.get('p');
+        const lotParam = urlParams.get('l');
+
+        if (cwidParam) {
+            document.getElementById('cwid').value = cwidParam;
+            setCWID();
+        }
+
+        if (permitParam) {
+            document.getElementById('permit').value = permitParam;
+            setPermit(); 
+        }
+        
+        const lotMap = {
+            'mc' : 'McCann',
+            'fy' : 'Foy',
+            'dy' : 'Dyson',
+            'dn' : 'Donnelly',
+            'fn' : 'Fontaine',
+            'hp' : 'Hoop',
+            'ne' : 'North End',
+            'mr' : 'Midrise',
+            'rv' : 'Riverview',
+            'uw' : 'Upper West',
+            'lw' : 'Lower West',
+        };
+        lot = lotMap[lotParam];
+        fillBooking();
+    }
+
+    function setCWID() {
+        const cwidField = document.getElementById('cwid');
+        cwid = cwidField.value; 
+        const cwidLabel = document.querySelector("label[for='cwid']");
+        cwidLabel.textContent = `CWID: ${cwid}`;
+        cwidField.style.display = 'none';
+    }
+
+    function setPermit() {
+        const permitField = document.getElementById('permit');
+        permit = permitField.value.toLowerCase();
+        const validPermits = ['resident', 'faculty'];
+
+        if (validPermits.includes(permit)) {
+            document.cookie = `userPermit=${permit}; path=/`;
+            const permitLabel = document.querySelector("label[for='permit']");
+            permitLabel.textContent = `Permit: ${permit.toUpperCase()}`;
+            permitField.style.display = 'none';
+        } else {
+            alert("Invalid permit type. Please enter either 'resident' or 'faculty'.");
+            permitField.value = ''; // Clear the invalid entry
+            permit = '';
+        }
+    }
+    
+    async function fillBooking() {
+        const response = await fetch('https://stefanog1121.github.io/SD330//parking.json');
+        const data = await response.json();
+        const lotInfo = data['lots'][lot];
+
+        const imgDiv = document.getElementById('lotMapImg');
+        imgDiv.style.backgroundImage = `url('${data['lots'][lot]['map']}')`;
+
+        const nameDiv = document.getElementById('lotName');
+        nameDiv.textContent = lot;
+
+        const inp = document.getElementById('spaceInput');
+        const confirmButton = document.getElementById('confirmButton');
+        inp.innerHTML = '<option value="" disabled selected>Choose Space</option>'; // Reset options
+
+        for (let i in data['lots'][lot]['spaces']) {
+            let space = data['lots'][lot]['spaces'][i];
+            let option = document.createElement('option');
+            option.value = space['num'];
+            option.text = `Spot ${space['num']}`;
+            inp.appendChild(option);
+        }
+        
+        inp.addEventListener('change', () => {
+            if (inp.value) {
+                updateSpaceInfo(lotInfo['spaces'][inp.value]);
+                confirmButton.disabled = false; 
+            }
+        });
+
+        const timeIn = document.getElementById("in")
+        const timeOut = document.getElementById("out")
+
+        confirmButton.addEventListener('click', function() {
+            if (!inp.value) {
+                alert('ERROR: Please select a parking spot before confirming.');
+            }
+            else if(timeIn.value === '' || timeOut.value === '') {
+                alert('ERROR: Please choose a reservation time before confirming.')
+            } else {
+                window.location.href = 'error.html';
+            }
+        });
+    }
+
+    function updateSpaceInfo(spot) {
+        const numSpan = document.getElementById('spotNum');
+        const permitSpan = document.getElementById('spotPermit');
+        const availSpan = document.getElementById('spotAvail');
+        const chargeSpan = document.getElementById('spotCharger');
+
+        numSpan.textContent = spot['num'];        
+        permitSpan.textContent = spot['permit'];  
+        availSpan.textContent = spot['availability']; 
+        chargeSpan.textContent = chargeSpan.textContent = spot['charger'] ? 'Yes' : 'No';
+    }
+
+    function checkTime() {
+        const timeIn = document.getElementById("in")
+        const timeOut = document.getElementById("out")
+        if (timeIn.value > timeOut.value && timeIn.value != '' && timeOut.value != '') {
+            timeOut.value = "";
+            timeIn.value = "";
+            alert("ERROR: Invalid reservation end time. Please choose valid time slot.");
+        }
+    }
+</script>
+</html>

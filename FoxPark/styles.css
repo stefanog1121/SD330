@@ -16,8 +16,8 @@ html {
 }
 
 nav {
-    margin-top: 110px;
-    margin-left: 20px;
+    margin-top: 100px;
+    height: 40px
 }
 
 .crumbs ol {
@@ -226,6 +226,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: x-large;
 }
 
 #header hr {
@@ -303,4 +304,69 @@ hr {
     font-size: larger;
     justify-self: center;
 }
+
+#window {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    margin: 80px;
+}
+
+#booking {
+    width: 350px;
+    height: 450px;
+}
+
+#lotDec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px 0 0;
+}
+
+#lotMapImg {
+    width: 375px;
+    height: 375px;
+    background-size: cover;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+#spaceHeader {
+    font-size: x-large;
+}
+
+#lotName {
+    font-size: xx-large;
+}
+
+#spaceInfo {
+    height: 250px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#spaceInput {
+    display: block;
+    margin: auto;
+    font-family: 'Montserrat';
+    width: 80%;
+}
+
+#confirmButton {
+    display: block;
+    margin: auto;
+    font-family: 'Montserrat';
+    align-self: center;
+    width: 80%;
+}
+
+
+
 

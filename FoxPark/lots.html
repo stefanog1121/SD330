@@ -28,13 +28,13 @@
 
     <nav>
         <ol>
-          <li class="crumb"><a href="#">Home</a></li>
+          <li class="crumb"><a href="javascript:getURL('parking');">Home</a></li>
           <li class="crumb">Parking Lots</li>
         </ol>
       </nav>
 
     <div id="header">
-        <h2>Available Lots</h2>
+        Campus Lots
         <hr>
     </div>
 
@@ -71,20 +71,20 @@
         const permitValue = permitElement ? permitElement.value : '';
 
         const urlMap = {
-        'parking': parkingURL,
-        'lots': lotsURL,
-        'error': errorURL,
-        'McCann': mcCannURL,
-        'Foy': foyURL,
-        'Dyson': dysonURL,
-        'Donnelly': donnellyURL,
-        'Fontaine': fontaineURL,
-        'Hoop': hoopURL,
-        'NorthEnd': northEndURL,
-        'Midrise': midriseURL,
-        'Riverview': riverviewURL,
-        'UpperWest': upperURL,
-        'LowerWest': lowerURL
+            'parking': parkingURL,
+            'lots': lotsURL,
+            'error': errorURL,
+            'McCann': mcCannURL,
+            'Foy': foyURL,
+            'Dyson': dysonURL,
+            'Donnelly': donnellyURL,
+            'Fontaine': fontaineURL,
+            'Hoop': hoopURL,
+            'NorthEnd': northEndURL,
+            'Midrise': midriseURL,
+            'Riverview': riverviewURL,
+            'UpperWest': upperURL,
+            'LowerWest': lowerURL
         };
 
         // General page VS Booking page link formatting
@@ -139,8 +139,8 @@
             permitLabel.textContent = `Permit: ${permit.toUpperCase()}`;
             permitField.style.display = 'none';
         } else {
-            alert("Invalid permit type. Please enter either 'resident' or 'faculty'.");
-            permitField.value = ''; // Clear the invalid entry
+            alert("ERROR: Invalid permit type. Please enter either 'resident' or 'faculty'.");
+            permitField.value = ''; 
             permit = '';
         }
     }
@@ -251,8 +251,15 @@
                 alert('ERROR: User Permit is not set. Please do so in your account settings.');
                 return;
             }
-            else if (!lotData.permit.includes(userPermit)) {
-                alert(`Error: ${name} Lot does not allow parking with your permit. Please choose another lot.`);
+            else if (!(lotData.permit.toLowerCase()).includes(userPermit)) {
+                const d = new Date();
+                let day = d.getDay(); 
+                if (lotData.weekendSwitch && ((day = 0) || (day = 6))) {
+                    alert(`NOTE: You are allowed to park in ${name} lot until the end of the weekend.`)
+                    getURL(name);
+                    return;
+                }
+                alert(`ERROR: ${name} Lot does not allow parking with your permit. Please choose another lot.`);
                 return;
             }
             else {
