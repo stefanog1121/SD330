@@ -17,7 +17,11 @@ html {
 
 nav {
     margin-top: 100px;
-    height: 40px
+    height: 40px;
+    color: #e62649;
+}
+nav a:link, a:visited {
+    color: #e62649;
 }
 
 .crumbs ol {
@@ -118,20 +122,25 @@ body {
 
 #title {
     padding: 100px;
-    color: #f15e77;
+    color: #e62649;
     text-align: center;
     font-size: 50px;
 }
 hr {
-    border: 2px solid #f15e77;
+    border: 2px solid #e62649;
 }
 
 #security {
     display: flex;
-    background-color: #f15e77;
+    background-color: #e62649;
     justify-content: space-between;
     align-items: center;
     padding: 100px 200px 100px 100px;
+    color: white;
+}
+
+#security h1, a:link, a:visited {
+    color: white;
 }
 
 #tickets {
@@ -140,15 +149,24 @@ hr {
     align-items: center;
     padding: 100px 0 100px 0;
     margin: 0 100px 0 200px;
+    color: #e62649;
+}
+
+#tickets a:link, a:visited {
+    color: #e62649;
 }
 
 #faq {
     display: flex;
-    background-color: #f15e77;
+    background-color: #e62649;
     justify-content: space-between;
     align-items: center;
     padding: 100px 200px 100px 100px;
-    
+    color: white;
+}
+
+#faq h1, a:link, a:visited {
+    color: white;
 }
 
 .infoImg {
